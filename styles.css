@@ -1,0 +1,382 @@
+/* navigation*/
+
+
+body {
+
+margin: 0;
+background: none;
+font-family:  sans-serif;
+color: white;
+font-weight: 400;
+}
+
+p.festival{
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: whitesmoke;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float: left;
+} 
+
+nav{
+float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px; 
+  padding-top: 100px;
+  
+  position: relative;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: lightgrey; 
+}
+
+nav a::before{
+  
+  content: '';
+  display: block;
+  height: 5px;
+  
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+
+/* parallax scrolling code*/
+#img {
+    max-width: 100%;
+    height: auto;
+  }
+  #home { 
+    background: url(images/brooklyn-bridge.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+    height: 100px; 
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  #home article { 
+    height: 1920px; 
+    position: absolute; 
+    text-align: center; 
+    top: 150px; 
+    width: 100%; 
+    color: #000;
+  }
+   
+  #about { 
+    background: url(images/brooklynbb.jpj) 50% 0 no-repeat min-height: 1000px;  
+    height: 350px; 
+    margin: 0 auto; 
+    width: 100%; 
+    max-width: 1920px; 
+    position: relative; 
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  }
+  
+  #about article { 
+    height: 458px; 
+    position: absolute; 
+    text-align: center; 
+    top: 150px; 
+    width: 100%; 
+  }
+   
+ /* grid for films page */
+ 
+ .containergrid {
+   display: grid;
+   grid-template: repeat(6,1fr) / repeat(6,1fr);
+   grid-template-rows: 1fr 0.05fr 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+   "v a a b b b"
+   "x x c d e z"
+   "w f g h i z"
+   "w j k l m z"
+   "w n o p q z"
+   "w r s t u z"
+  
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  
+}
+   header#a {
+    padding: 30px;
+    background-color: rgb(206, 199, 199);
+    grid-area: a;
+  }
+  header#b {
+   padding: 50px;
+    background-color: rgb(206, 199, 199);
+    grid-area: b;
+  }
+  section#c {
+    height: 65px;
+    padding-top: 45px;
+    
+    grid-area: c;
+  }
+  section#d { 
+
+    padding-top: 40px;
+    
+    grid-area: d;
+  }
+  section#e {
+    padding-top: 10px;
+    padding-right: 10px;
+    grid-area: e;
+  }
+  section#f {
+    height: 350px;
+    width: 200px;
+    grid-area: f;
+    padding-top: 5em;
+  }
+  section#g {
+   
+    height: 350px;
+    width: 200px;
+   
+    grid-area: g;
+  }
+  section#h {
+    height: 350px;
+    width: 200px;
+    
+    grid-area: h;
+  }
+  section#i {
+    
+    height: 350px;
+    width: 200px;
+   
+    grid-area: i;
+  }
+  section#j {
+    
+    height: 350px;
+    width: 200px;
+    grid-area: j;
+    padding-top: 5em;
+  }
+  section#k {
+   
+    height: 350px;
+    width: 200px;
+    grid-area: k;
+  }
+  section#l {
+ 
+    height: 350px;
+    width: 200px;
+   
+    grid-area: l;
+  }
+  section#m {
+   
+    height: 350px;
+    width: 200px;
+    grid-area: m;
+  }
+  section#n {
+   
+    height: 350px;
+    width: 200px;
+    grid-area: n;
+    padding-top: 5em;
+  }
+  section#o {
+   
+    height: 350px;
+    width: 200px;
+    grid-area: o;
+  }
+  section#p {
+    
+    height: 350px;
+    width: 200px;
+   
+    grid-area: p;
+  }
+  section#q {
+  
+    height: 350px;
+    width: 200px;
+    
+    grid-area: q;
+  }
+  section#r {
+    
+    height: 350px;
+    width: 200px;
+    padding-top: 5em;
+    grid-area: r;
+  }
+  section#s {
+  
+    height: 350px;
+    width: 200px;
+    grid-area: s;
+  }
+  section#t {
+    
+    height: 350px;
+    width: 200px;
+    grid-area: t;
+  }
+  section#u {
+   
+    height: 350px;
+    width: 200px;
+    
+    grid-area: u;
+  }
+  section#v {
+ 
+   
+    background-color: rgb(206, 199, 199); 
+    grid-area: v;
+   
+  }
+  section#w {
+
+    
+    grid-area: w;
+    background-color: none; 
+  }
+  section#v1 {
+
+    grid-area: x;
+    background-color: none; 
+  }
+  section#vv {
+ 
+   
+    background-color: rgb(206, 199, 199); 
+    grid-area: Y;
+   
+  }
+  section#ww {
+
+    
+    grid-area: z;
+    background-color: none; 
+  }
+
+
+
+ #box1{
+   background-color: grey;
+ }
+ #box2{
+  background-color: lightgrey;
+}
+/* code for lightbox */
+
+.backdrop{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:50;
+  display:none;
+  
+}
+
+.box {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  width: 500px;
+  height: 300px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow; 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  display:none;
+}
+
+#close{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+.longlogo{
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
