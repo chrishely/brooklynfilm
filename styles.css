@@ -13,11 +13,14 @@
 
 }
 .longlogo{
+  display: flex;
+  justify-content: center;
   display: block;
-  margin-top: auto;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-
+  width: 60%;
+  height:60%;
 }
 .social{
  
@@ -142,8 +145,7 @@ nav a:hover::before{
   }
    
   #about { 
-    background: url(images/brooklynbb.jpj) 50% 0 no-repeat; 
-    min-height: 1000px;  
+    min-height: 500px;  
     height: 350px; 
     margin: 0 auto; 
     width: 100%; 
@@ -170,10 +172,10 @@ nav a:hover::before{
    grid-template-areas:
    "v a a b b b"
    "x x c d e z"
-   "w f g h i z"
-   "w j k l m z"
-   "w n o p q z"
-   "w r s t u z"
+   "w f g k p z"
+   "w j h l u z"
+   "w n o m s z"
+   "w r i t q z"
   
 }
 
@@ -357,7 +359,8 @@ nav a:hover::before{
 
 
  #box1{
-   background-color: grey;
+   background-color: #ffffff;
+   
  }
  #box2{
   background-color: lightgrey;
@@ -369,7 +372,7 @@ nav a:hover::before{
   top: 0%;
   left: 0%;
   width: 100%;
-  height: 100%;
+  height: 225%;
   background: #000;
   opacity: .0;
   filter: aplha (opacity=0);
@@ -397,10 +400,10 @@ nav a:hover::before{
   -webkit-box-shadow: 0px 0px 5px #444444;
   box-shadow: 0px 0px 5px #444444;
   margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   display: none;
-display:none;
+  max-width: 850px;
 }
 
 #close{
@@ -422,7 +425,7 @@ display:none;
   top: 0%;
   left: 0%;
   width: 100%;
-  height: 100%;
+  height: 225%;
   background: #000;
   opacity: .0;
   filter: aplha (opacity=0);
@@ -449,13 +452,533 @@ display:none;
   -webkit-box-shadow: 0px 0px 5px #444444;
   box-shadow: 0px 0px 5px #444444;
   margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   display: none;
-display:none;
+  max-width: 850px;
 }
 
 #close1{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+/* code for lightbox Giant */
+.backdrop2{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close2{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Gremlins */
+.backdrop3{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box3 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close3{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+
+/* code for Star Wars */
+.backdrop4{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box4 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close4{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Star Wars */
+.backdrop5{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box5 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close5{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Batman */
+.backdrop6{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box6{
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close6{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Gremlins 2 */
+.backdrop7{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box7 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close7{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Thing */
+.backdrop8{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box8 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close8{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Nightmare */
+.backdrop9{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box9 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close9{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Big Trouble */
+.backdrop10{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box10 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close10{
+	position:absolute;
+	right:20px;
+	top:20px;
+	background:rgba(0, 0, 0, 0.2);
+	height:20px;
+	width:20px;
+	border-radius:15px;
+	text-align:center;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+/* code for Aliens */
+.backdrop11{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 225%;
+  background: #000;
+  opacity: .0;
+  filter: aplha (opacity=0);
+  z-index:0;
+  display:none;
+}
+.box11 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: absolute;
+  color: darkslategray;
+  text-align: center;
+  top: 20%;
+  left: 30%;
+  padding-left: 20px;
+  background: #ffffff;
+  z-index:51;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-box-shadow: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0px 0px 5px #444444;
+  -webkit-box-shadow: 0px 0px 5px #444444;
+  box-shadow: 0px 0px 5px #444444;
+  margin-top: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: none;
+  max-width: 850px;
+}
+
+#close11{
 	position:absolute;
 	right:20px;
 	top:20px;
