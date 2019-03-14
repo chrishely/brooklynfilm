@@ -13,7 +13,7 @@ $(document).ready(function () {
       $bgobj.css({ backgroundPosition: coords });
     });
   });
-// carousel$('.carousel').carousel()};
+
   
 
   // lightbox Goonies
