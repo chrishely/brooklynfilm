@@ -305,3 +305,8 @@ $('.backdrop11,.box11').animate({ 'opacity': '0' }, 300, 'linear', function () {
 }
 
 });
+
+// nice Select tool registration page
+$(document).ready(function() {
+  $('select').niceSelect()
+})

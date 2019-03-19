@@ -24,20 +24,17 @@
  
   float: right;
 }
-.footer1
-{
+.footer1{
   display: inline;
   margin-top: 20px 35px;
   float: right;
   padding:100px 30px;
 }
 
-.footer2
-{
+.footer2{
   display: inline;
   margin:  35px;
   float: right;
- 
 }
 
 
