@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brooklyn Outdoor Film Festival</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script type ="text/javascript" src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brooklyn Outdoor Film Festival</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="index.js"></script>
 </head>
+
 <body>
 
-<header> 
-     <div class="container">
-                           
-     <a href="index.html"><img src="images/brooklynfilmlogo.png" alt="logo" class="logo"></a>
-     <nav>
+  <header>
+    <div class="containerheader">
+
+      <a href="index.html"><img src="images/brooklynfilmlogo.png" alt="logo" class="logo"></a>
+      <nav>
         <ul>
-            <li><a href="films.html">Films</a></li>
-            <li><a href="indextwo.html">partners</a></li>
-            <li><a href="register.html">register</a></li>
+          <li><a href="films.html">Films</a></li>
+          <li><a href="register.html" style="margin-right: 50px;">register</a></li>
         </ul>
-    </nav>
+      </nav>
     </div>
-</header>
+  </header>
 
-<select>
-    <option data-display="Please select a movie">Available Movies</option>
-    <option value="0">The Goonies</option>
-    <option value="1">Batman</option>
-    <option value="2">Star Wars</option>
-    <option value="3" disabled>The Jungle Book</option>
-    <option value="4">Nightmare on Elm Street</option>
-  </select>
 
-       
-        </body>
+
+  <div class="select">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Your last email..">
+
+
+      <div class="ticket">
+        <h5>Tickets</h5><select>
+
+          <option data-display="Please select a ticket option">Available Options</option>
+          <option value="0">Full Festival (Free)</option>
+          <option value="1">August 5th (Free)</option>
+          <option value="2">August 6th (Free)</option>
+          <option value="3">August 7th (Free)</option>
+          <option value="4">August 8th (Free)</option>
+        </select>
+      </div>
+      <div class="numticket"><label for="Numbertickets">Number</label><select>
+
+          <option data-display="Number of tickets">Maximum 5 per person</option>
+          <option value="0">1</option>
+          <option value="1">2</option>
+          <option value="2">3</option>
+          <option value="3">4</option>
+          <option value="4">5</option>
+        </select>
+      </div>
+      <input type="submit" value="Submit">
+  </div>
+
+
+  <footer>
+
+    <div class="partners">
+      <a href="https://www.brooklynbridgepark.org/"><img src="images/bbp_logo_huge_blue.png" width="150" height="50"
+          class="brooklyn park logo" style="margin-right: 20px;"></a>
+      <a href="http://brooklyn.news12.com/"><img src="images/news.png" width="150" height="50"
+          class="brooklyn park logo"></a>
+    </div>
+    <div class="footer1">
+      <a href="https://www.facebook.com/"><img src="images/Facebook.png" width="50" height="50" class="Facebook"
+          style="margin-right: 10px;"></a>
+      <a href="https://www.twitter.com/"><img src="images/Twitter.png" width="50" height="50" class="Twitter"
+          style="margin-right: 10px;"></a>
+      <a href="https://www.Instagram.com/"><img src="images/Instagram.png" width="50" height="50" class="Instagram"
+          style="margin-right: 10px;"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
