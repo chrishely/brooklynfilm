@@ -1034,6 +1034,13 @@ section#ww {
   }
 }
 
+.carousel-caption h1 {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .9);
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  position: top;
+}
+
 .carousel-caption {
   text-shadow: 0 1px 4px rgba(0, 0, 0, .9);
   font-size: 17px
@@ -1049,7 +1056,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 .item:nth-child(1) {
-  background: url(images/Fighting.jpg)10% 0 no-repeat fixed;
+  background: url(images/outdoorcinema.jpg)10% 0 no-repeat fixed;
   min-height: 500px;
   max-height: 600px;
   background-size: 900px 450px;
@@ -1058,7 +1065,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 .item:nth-child(2) {
-  background: url(images/freddy.jpeg) 10% 0 no-repeat fixed;
+  background: url(images/food.jpg) 10% 0 no-repeat fixed;
   min-height: 500px;
   max-height: 600px;
   background-size: 900px 450px;
@@ -1067,7 +1074,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 .item:nth-child(3) {
-  background: url(images/big-trouble.jpg) 10% 0 no-repeat fixed;
+  background: url(images/light.jpg) 10% 0 no-repeat fixed;
   min-height: 500px;
   max-height: 600px;
   background-size: 900px 450px;
@@ -1076,12 +1083,104 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 .item:nth-child(4) {
-  background: url(images/ripley.jpeg) 10% 0 no-repeat fixed;
+  background: url(images/family.jpg) 10% 0 no-repeat fixed;
   min-height: 500px;
   max-height: 600px;
   background-size: 900px 450px;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.item:nth-child(1)::before {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Outdoor cInema';
+  font-size: 5em;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.item:nth-child(2)::before {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'ArtiZan Food and Drinks';
+  font-size: 5em;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.item:nth-child(3)::before {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Brooklyn PaRk brIdge';
+  font-size: 5em;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.item:nth-child(4)::before {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'fUn foR all the FamilY and Pets';
+  font-size: 5em;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.item:nth-child(1)::after {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Outdoor cInema';
+  font-size: 3em;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  color: #ccc;
+}
+
+.item:nth-child(2)::after {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Outdoor cInema';
+  font-size: 3em;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  color: #ccc;
+}
+
+.item:nth-child(3)::after {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Outdoor cInema';
+  font-size: 3em;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  color: #ccc;
+}
+
+.item:nth-child(4)::after {
+  text-align: center;
+  font-family: neon light, sans-serif;
+  content: 'Outdoor cInema';
+  font-size: 3em;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  display: block;
+  color: #ccc;
 }
 
 .text {
@@ -1101,7 +1200,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 100%;
+  width: 50%;
   background-color: lightskyblue;
   color: white;
   padding: 14px 20px;
@@ -1109,6 +1208,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  
 }
 
 input[type=submit]:hover {
