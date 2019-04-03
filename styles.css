@@ -1,12 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+
+/*html {
+margin:0;
+padding:0;
+height:100%
+}
+*/
+
 body {
-  margin: 0;
+  
   background: none;
   font-family: sans-serif;
   color: white;
   font-weight: 400;
   box-sizing: border-box;
 }
-
+#wrapper{
+  min-height: 100%;
+  position: bottom;
+}
 .longlogo {
   display: flex;
   justify-content: center;
@@ -28,8 +43,15 @@ body {
   padding-right: 20px;
   float: left;
 }
-
+footer {
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  right:  0px;
+}
 .footer1 {
+  max-height: 5px;
   margin-top: 20px 35px;
   float: right;
   padding: 100px 30px;
@@ -1136,51 +1158,60 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 .item:nth-child(1)::after {
+  display: block;
+  white-space: pre;
   text-align: center;
   font-family: neon light, sans-serif;
-  content: 'Outdoor cInema';
+  content: 'eXperience\A the First oUtdoor fIlm festival \A in New yOrK';
   font-size: 3em;
   padding-top: 180px;
   display: flex;
   justify-content: center;
-  display: block;
-  color: #ccc;
+  text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px white;
+  color: white;
+ 
 }
 
 .item:nth-child(2)::after {
   text-align: center;
+  white-space: pre;
   font-family: neon light, sans-serif;
-  content: 'Outdoor cInema';
+  content: 'thE bEst Food \A FroM thE Five Boroughs';
   font-size: 3em;
   padding-top: 180px;
   display: flex;
   justify-content: center;
   display: block;
-  color: #ccc;
+  text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px white;
+  color: white;
 }
 
 .item:nth-child(3)::after {
   text-align: center;
+  white-space: pre;
   font-family: neon light, sans-serif;
-  content: 'Outdoor cInema';
+  content: 'aLl set iN thE IconIC \A BroOklyn BriDge ParK';
   font-size: 3em;
   padding-top: 180px;
   display: flex;
   justify-content: center;
   display: block;
-  color: #ccc;
+  text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px white;
+  color: white;
 }
 
 .item:nth-child(4)::after {
   text-align: center;
+  white-space: pre;
   font-family: neon light, sans-serif;
-  content: 'Outdoor cInema';
+  content: 'EveryOne WelCome \A (inCluding YoUr FurrY Friends)';
   font-size: 3em;
   padding-top: 180px;
   display: flex;
   justify-content: center;
   display: block;
-  color: #ccc;
+  text-shadow: 1px 1px 2px black, 0 0 25px whitesmoke, 0 0 5px white;
+  color: white;
 }
 
 .text {
@@ -1188,6 +1219,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 /*container for register*/
+
 
 input[type=text], select {
   width: 100%;
@@ -1200,7 +1232,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 50%;
+  width: 100%;
   background-color: lightskyblue;
   color: white;
   padding: 14px 20px;
@@ -1231,4 +1263,13 @@ input[type=submit]:hover {
 .numticket {
   margin-top: 10px;
   float: right;
+}
+
+.register{
+  height: 650;
+  width: 950px;
+  background-color: none;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 120px;
 }
