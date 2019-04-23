@@ -185,9 +185,9 @@ function close_box6() {
 }
 
 
-// lightbox Gremlins 2
-
+// lightbox Gremlins2
 $(document).ready(function () {
+
   $('.lightbox7').click(function () {
 
     $('.backdrop7, .box7').animate({ 'opacity': '.50' }, 300, 'linear');
@@ -200,15 +200,14 @@ $(document).ready(function () {
   $('.backdrop7').click(function () {
     close_box7()
   });
-
-
-  function close_box7() {
-    $('.backdrop7,.box7').animate({ 'opacity': '0' }, 300, 'linear', function () {
-      $('.backdrop7, .box7').css('display', 'none');
-    });
-  }
-
 });
+
+function close_box7() {
+  $('.backdrop7,.box7').animate({ 'opacity': '0' }, 300, 'linear', function () {
+    $('.backdrop7, .box7').css('display', 'none');
+  });
+}
+
 
 // lightbox The Thing
 $(document).ready(function () {
