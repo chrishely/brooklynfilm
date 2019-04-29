@@ -781,9 +781,9 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
         padding-right: 0em;
     }
 }
-@media (min-width:374px) {
+@media (min-width:375px) {
     #hone {
-        top: 33vh;
+        top: 35vh;
         background: none;
         z-index: 1000;
     }
@@ -796,7 +796,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
         padding-right: 0em;
     }
 }
-@media (min-width:375px) {
+@media (min-width:414px) {
     #hone {
         top: 37vh;
         background: none;
