@@ -386,7 +386,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
     background: url(images/outdoorcinema.jpg)10% 0 no-repeat fixed;
     min-height: 100%;
     max-height: 100%;
-    background-size: 150%;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -395,7 +395,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
     background: url(images/food.jpg) 10% 0 no-repeat fixed;
     min-height: 100%;
     max-height: 100%;
-    background-size: 150%;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -404,7 +404,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
     background: url(images/light.jpg) 10% 0 no-repeat fixed;
     min-height: 100%;
     max-height: 100%;
-    background-size: 150%;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -413,7 +413,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
     background: url(images/family.jpg) 10% 0 no-repeat fixed;
     min-height: 100%;
     max-height: 100%;
-    background-size: 150%;
+    background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -433,6 +433,18 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 @media (max-width:820px) {
     .item:nth-child(1)::before {
         font-size: 3em;
+    }
+    .item:nth-child(1){
+        background-size: 150%;
+    }
+    .item:nth-child(2){
+        background-size: 150%;
+    }
+    .item:nth-child(3){
+        background-size: 150%;
+    }
+    .item:nth-child(4){
+        background-size: 150%;
     }
 }
 
@@ -860,7 +872,7 @@ html, body, .carousel, .carousel-inner, .carousel-inner .item {
 }
 
 
-@media (min-width:1270px) {
+@media (min-width:1200px) {
     .container {
         display: none;
     }
@@ -1045,103 +1057,103 @@ section#e {
 
 section#f {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: f;
     padding-top: 5em;
 }
 
 section#g {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: g;
 }
 
 section#h {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: h;
     z-index: 2;
 }
 
 section#i {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: i;
     z-index: 2;
 }
 
 section#j {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: j;
     padding-top: 5em;
 }
 
 section#k {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: k;
 }
 
 section#l {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: l;
 }
 
 section#m {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: m;
 }
 
 section#n {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: n;
     padding-top: 5em;
 }
 
 section#o {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: o;
 }
 
 section#p {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: p;
 }
 
 section#q {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: q;
 }
 
 section#r {
     height: 350px;
-    width: 200px;
+    width: 100%;
     padding-top: 5em;
     grid-area: r;
 }
 
 section#s {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: s;
 }
 
 section#t {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: t;
 }
 
 section#u {
     height: 350px;
-    width: 200px;
+    width: 100%;
     grid-area: u;
 }
 
@@ -1283,7 +1295,7 @@ section#ww {
     border-radius: 5px;
     -moz-box-shadow: 0px 0px 5px #444444;
     -webkit-box-shadow: 0px 0px 5px #444444;
-    box-shadow: 0px 0px 5px #444444;
+    
     margin-top: auto;
     margin-left: 20px;
     margin-right: 20px;
