@@ -106,6 +106,7 @@ nav a {
         top: 0;
         width: 0%;
         transition: all ease-in-out 250ms;
+      
     }
     nav a:hover::before {
         width: 100%;
@@ -117,7 +118,8 @@ nav a {
   
   .columnone {
    max-height: 500px;
-    margin: 10px;
+   margin-right: 100px; 
+   margin-left: 100px;
     overflow: auto;
   }
   
@@ -150,6 +152,21 @@ nav a {
       font-size: 1.2em;
       font-weight: 300; 
   }
+
+  @media (max-width:800px) {
+    .columnone{
+       max-width: 100%;
+        max-height: 100%;
+        margin-right: 10px; 
+        margin-left: 10px;
+    }  
+        .head2{
+            font-size: 1,75em;
+        }
+        .textone {
+            font-size: 1em;
+        }
+    }
 /* footer */
 
 footer {
